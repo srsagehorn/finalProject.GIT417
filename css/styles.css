@@ -1,0 +1,108 @@
+nav {
+  background-color: #431291 !important;
+  height: 75px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+ul {
+  position: relative;
+  top: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.active {
+  border-bottom: none;
+}
+
+a {
+  font-size: 24px;
+  color: white;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+a:hover {
+  color: white;
+  border-bottom: none;
+}
+
+header {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.line {
+  border-right: #431291 6px solid;
+  height: 2500px;
+}
+
+.down {
+  margin-top: 40px;
+}
+
+.heading {
+  color: #431291;
+  font-size: 32px;
+  display: inline;
+  font-weight: 600;
+}
+
+.mainHeading {
+  color: #431291;
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.medCir {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #431291;
+  border: 4px white solid;
+  display: inline-block;
+  position: relative;
+  left: -112px;
+}
+
+.right {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+footer {
+  text-align: center;
+  background-color: #431291;
+  color: white;
+}
+
+pre {
+  margin: 1em 0;
+}
+
+.hljs {
+  display: block;
+  padding: 1em;
+  background: rgb(228, 228, 228);
+  color: black;
+  border-radius: 5px;
+}
+
+.hljs-keyword,
+.hljs-title,
+.hljs-name {
+  color: #515151;
+}
+
+.hljs-string,
+.hljs-literal {
+  color: rgb(93, 46, 205);
+}
