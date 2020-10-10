@@ -40,37 +40,30 @@ header {
   margin-right: 10px;
 }
 
-.line {
+/* .line {
   border-right: #431291 6px solid;
   height: 2500px;
-}
+} */
 
 .down {
   margin-top: 40px;
 }
 
 .heading {
-  color: #431291;
-  font-size: 32px;
-  display: inline;
+  background-color: #431291;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  /* color: #431291; */
+  font-size: 38px;
   font-weight: 600;
+  width: 100%;
 }
 
 .mainHeading {
   color: #431291;
   font-size: 52px;
   font-weight: 800;
-}
-
-.medCir {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: #431291;
-  border: 4px white solid;
-  display: inline-block;
-  position: relative;
-  left: -112px;
 }
 
 .right {
@@ -82,6 +75,7 @@ footer {
   text-align: center;
   background-color: #431291;
   color: white;
+  margin-top: 50px;
 }
 
 pre {
@@ -105,4 +99,21 @@ pre {
 .hljs-string,
 .hljs-literal {
   color: rgb(93, 46, 205);
+}
+
+.fadein,
+.fadeout {
+  opacity: 0;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.fadein {
+  opacity: 1;
+}
+
+.side {
+  margin-left: auto;
+  margin-right: auto;
 }
