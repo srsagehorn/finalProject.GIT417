@@ -15,11 +15,12 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <script src="../highlight.site.pack.js"></script>
+    <script src="highlight.site.pack.js"></script>
+    <!-- initialize the highlighting when the page loads -->
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>map() function tutorial</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
       <nav class="card nav-tabs">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="./foreach.html">forEach()</a>
+            <a class="nav-link" href="./index.html">forEach()</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="./map.html">map()</a>
@@ -47,17 +48,18 @@
               is a javascript array method, except that it creates a new array
               populated with the results of whatever function the user inputs.
             </p>
-            <h2 class="heading">So how do I use it?</h2>
+            <h2 class="heading">Why use the .map() method?</h2>
             <div class="col-md-10 side">
               <p>
                 For this example we will be working with the following array
               </p>
               <pre><code>var dogs = ["pitbull", "yorkie", "shitzu", "dalmatian"]</code></pre>
               <p>
-                If we attempted to make everything uppercase and all of the
-                elements back into an array with a for loop, we would:
+                If we attempted to make everything uppercase within the array
+                using a for loop, we would:
               </p>
-              <pre><code>var upperCaseDogs = []
+              <pre><code>var dogs = ["pitbull", "yorkie", "shitzu", "dalmatian"]
+var upperCaseDogs = []
 for ( var i = 0; i < dogs.length; i++) {
           upperCaseDogs.push(dogs[i].toUpperCase())
           }
@@ -76,14 +78,26 @@ for ( var i = 0; i < dogs.length; i++) {
             </div>
             <h3 class="heading">Syntax</h3>
             <div class="col-md-10 side">
+              <p>
+                In the .map() method, you initialize the array you want to work
+                with, then assign a variable to an empty array or the entire
+                .map() statement like you will see in these examples. Then
+                assign the empty array to the initial array followed by .map().
+                Within those parentheses you can place any function and the
+                method goes through each index in the array and applies it, then
+                places it into the new array.
+              </p>
               <p>Function</p>
-              <pre><code>let newArray = arrayName.map(function (element) {
-                element
+              <pre><code>var array = ["index1", "index2", "index3"]
+let newArray = array.map(function (element) {
+                your function here
               })</code></pre>
               <p>Fat arrow function</p>
-              <pre><code>let newArray = arrayName.map(element => {element manipulation})</code></pre>
+              <pre><code>var array = ["index1", "index2", "index3"]
+let newArray = array.map(element => {your function here})</code></pre>
               <p>So for our dogs example the map function would look like:</p>
-              <pre><code>let uppercaseDogs = dogs.map(dog => dog.toUpperCase())</code></pre>
+              <pre><code>var dogs = ["pitbull", "yorkie", "shitzu", "dalmatian"]
+let uppercaseDogs = dogs.map(dog => dog.toUpperCase())</code></pre>
               <button id="dogs" type="button" class="btn btn-dark">Run</button>
               <pre
                 id="adogs"
